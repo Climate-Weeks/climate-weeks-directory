@@ -51,17 +51,18 @@ const ClimateWeeksDirectory = () => {
 
   return (
     <div className="py-4">
-      <h1 className="text-3xl font-bold mb-2 text-center">Climate Weeks Directory</h1>
+      <h1 className="text-3xl font-bold mb-2 text-center">Global Climate Weeks</h1>
       <p className="text-gray-700 text-center max-w-xl mx-auto mb-6">
-        Explore upcoming climate action events, summits, and activities around the globe.
-        Filter by city or month to find events that matter to you!
+        Join climate weeks happening across the globe. 
+        Whether you're a leader, activist, or concerned citizen, find the summits 
+        and conferences that will shape our sustainable future.
       </p>
 
       {/* Filters */}
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
         <div className="w-full">
           <label className="text-sm font-medium mb-1 block" htmlFor="city-filter">
-            City
+            Choose your city
           </label>
           <select
             id="city-filter"
@@ -80,7 +81,7 @@ const ClimateWeeksDirectory = () => {
 
         <div className="w-full">
           <label className="text-sm font-medium mb-1 block" htmlFor="month-filter">
-            Month
+            Select when to attend
           </label>
           <select
             id="month-filter"
@@ -101,7 +102,7 @@ const ClimateWeeksDirectory = () => {
       {/* No results */}
       {filteredEvents.length === 0 && (
         <div className="mt-8 p-4 border rounded text-center text-gray-700">
-          No events match your filters.
+          No events found for your selection. Try different filters to discover more opportunities.
         </div>
       )}
 
@@ -133,12 +134,29 @@ const ClimateWeeksDirectory = () => {
                   <div className="flex items-start justify-between">
                     <div>
                       <h3 className="text-xl font-semibold">{event.city}</h3>
-                      <p className="text-sm text-gray-600">{event.eventName}</p>
+                      {event.website ? (
+                        <a
+                          href={event.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-base font-medium text-gray-600 hover:text-green-600 transition-colors"
+                        >
+                          {event.eventName}
+                        </a>
+                      ) : (
+                        <h4 className="text-base font-medium text-gray-600">{event.eventName}</h4>
+                      )}
                     </div>
                     {event.website && (
-                      <span className="text-green-600 flex-shrink-0">
+                      <a
+                        href={event.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="text-green-600 flex-shrink-0"
+                      >
                         <Globe size={20} />
-                      </span>
+                      </a>
                     )}
                   </div>
 
@@ -147,10 +165,6 @@ const ClimateWeeksDirectory = () => {
                     <div className="flex items-center gap-2">
                       <Calendar size={16} className="text-gray-500" />
                       <span>{formatDateRange(event)}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Users size={16} className="text-gray-500" />
-                      <span>{event.organizers.join(', ')}</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <FileText size={16} className="text-gray-500 mt-0.5" />

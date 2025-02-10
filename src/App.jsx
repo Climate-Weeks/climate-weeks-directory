@@ -44,6 +44,41 @@ export default function App() {
         >
           Alec Turnbull
         </a>
+        {" • "}
+        <a
+          href="https://linkedin.com/in/jackiemoe"
+          className="text-accent hover:underline" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Jackie Moe
+        </a>
+        {" • "}
+        <a
+          href="https://linkedin.com/in/jazoff"
+          className="text-accent hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Jon Azoff
+        </a>
+        <div className="mt-2">
+          <a
+            href="https://github.com/alecturnbull/climateweeks"
+            className="text-accent hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          {" • "}
+          <a
+            href="mailto:alec@climatetechcities.com"
+            className="text-accent hover:underline"
+          >
+            Contact
+          </a>
+        </div>
       </footer>
     </div>
   );

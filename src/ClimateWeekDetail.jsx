@@ -74,9 +74,10 @@ export default function ClimateWeekDetail() {
                 href={event.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent hover:underline flex-shrink-0"
+                className="text-accent hover:underline flex-shrink-0 flex items-center gap-2"
               >
                 <Globe size={24} />
+                <span>Official Website</span>
               </a>
             )}
           </div>
@@ -89,7 +90,10 @@ export default function ClimateWeekDetail() {
             </div>
             <div className="flex items-center gap-2">
               <Users size={18} className="text-gray-500" />
-              <span className="text-sm">{event.organizers.join(', ')}</span>
+              <span className="text-sm">
+                <span className="font-medium">Organizer: </span>
+                {event.organizers.join(', ')}
+              </span>
             </div>
             <div className="flex items-start gap-2">
               <FileText size={18} className="text-gray-500 mt-0.5" />
