@@ -43,6 +43,18 @@ export const climateWeeks = [
       imageUrl: "https://images.pexels.com/photos/21597650/pexels-photo-21597650/free-photo-of-facade-of-the-united-states-capitol.jpeg"
     },
     {
+      city: "Seattle, Portland, Vancouver",
+      slug: "pnw-climate-week",
+      eventName: "PNW Climate Week",
+      website: "https://pnwclimateweek.org/",
+      startDate: "2025-07-07",
+      endDate: "2025-07-13",
+      months: ["July"],
+      organizers: ["PNW Climate Week"],
+      description: "Pacific Northwest Climate Week is a community-powered event series that unites climate innovators, thought leaders, and enthusiasts. Join us as we shine a spotlight on the Pacific Northwest, renowned as a global hub of climate innovations.",
+      imageUrl: "https://images.pexels.com/photos/4448861/pexels-photo-4448861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
       city: "Los Angeles",
       slug: "los-angeles",
       eventName: "LA Climate Week",
