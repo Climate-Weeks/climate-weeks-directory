@@ -83,12 +83,12 @@ export const climateWeeks = [
     {
       city: "Houston",
       slug: "houston",
-      eventName: "Climate Week Houston",
-      website: "https://climateweekhouston.com/",
+      eventName: "Houston Energy and Climate Startup Week",
+      website: "https://houstonenergyclimatestartupweek.com/",
       months: ["September"],
-      isTBD: true,
-      displayDate: "TBD (Sept, 2025)",
-      organizers: ["Climate Week Houston"],
+      startDate: "2025-09-15",
+      endDate: "2025-09-19",
+      organizers: ["Houston Energy and Climate Startup Week"],
       description: "Houston's showcase of climate initiatives brings together energy industry leaders, innovators, and sustainability experts in America's energy capital. The event focuses on the energy transition, featuring discussions on clean energy technology, carbon capture, and the future of sustainable energy systems.",
       imageUrl: "https://images.pexels.com/photos/15353653/pexels-photo-15353653/free-photo-of-aerial-view-of-downtown-houston-texas-at-night.jpeg"
     },
@@ -110,11 +110,23 @@ export const climateWeeks = [
       eventName: "The People Events",
       website: "https://climateweek.thepeopleevents.com/",
       startDate: "2025-10-22",
-      endDate: "2025-10-25",
+      endDate: "2025-10-24",
       months: ["October"],
       organizers: ["The People Events"],
       description: "Milan's Climate Week brings together European leaders in sustainability, fashion, and design to address climate challenges. The event features sustainable fashion showcases, circular economy workshops, and discussions on urban sustainability, highlighting Italy's commitment to climate-conscious innovation and design.",
       imageUrl: "https://images.pexels.com/photos/215516/pexels-photo-215516.jpeg"
     },
+    {
+      city: "Denver",
+      slug: "denver",
+      eventName: "Colorado Climate Week",
+      website: "https://coloradoclimateweek.com/",
+      startDate: "2025-03-24",
+      endDate: "2025-03-26",
+      months: ["March"],
+      organizers: ["Colorado Clean Tech"],
+      description: "Join a dynamic gathering of cleantech innovators, policy makers, corporate leaders, and investors driving actionable change. Colorado Climate Week stands out as the must-attend event of the year by offering unparalleled opportunities to influence Colorado’s sustainability initiatives and set a regional example for others to follow. Discover cutting-edge solutions, forge strategic partnerships, and shape the next wave of green innovations – all in one transformative experience.",
+      imageUrl: "https://images.pexels.com/photos/3608032/pexels-photo-3608032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    }
   ];
   

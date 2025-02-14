@@ -29,13 +29,14 @@ export default function ClimateWeekDetail() {
       </div>
     );
   }
-
-  const formatDateRange = (ev) => {
-    if (ev.isTBD) return ev.displayDate;
-    const start = new Date(ev.startDate);
-    const end = new Date(ev.endDate);
+  
+  const formatDateRange = (event) => {
+    if (event.isTBD) return event.displayDate;
+    // Add 'T00:00:00' to ensure dates are parsed in local timezone
+    const start = new Date(event.startDate + 'T00:00:00');
+    const end = new Date(event.endDate + 'T00:00:00');
     return `${start.toLocaleDateString('default', { month: 'short' })}. ${start.getDate()}
-      – ${end.toLocaleDateString('default', { month: 'short' })}. ${end.getDate()},
+      - ${end.toLocaleDateString('default', { month: 'short' })}. ${end.getDate()}, 
       ${start.getFullYear()}`;
   };
 
