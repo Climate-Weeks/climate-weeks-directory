@@ -42,8 +42,9 @@ const ClimateWeeksDirectory = () => {
   // Format dates
   const formatDateRange = (event) => {
     if (event.isTBD) return event.displayDate;
-    const start = new Date(event.startDate);
-    const end = new Date(event.endDate);
+    // Add 'T00:00:00' to ensure dates are parsed in local timezone
+    const start = new Date(event.startDate + 'T00:00:00');
+    const end = new Date(event.endDate + 'T00:00:00');
     return `${start.toLocaleDateString('default', { month: 'short' })}. ${start.getDate()}
       - ${end.toLocaleDateString('default', { month: 'short' })}. ${end.getDate()}, 
       ${start.getFullYear()}`;
