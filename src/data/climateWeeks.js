@@ -140,5 +140,17 @@ export const climateWeeks = [
       description: "Join a dynamic gathering of cleantech innovators, policy makers, corporate leaders, and investors driving actionable change. Colorado Climate Week stands out as the must-attend event of the year by offering unparalleled opportunities to influence Colorado’s sustainability initiatives and set a regional example for others to follow. Discover cutting-edge solutions, forge strategic partnerships, and shape the next wave of green innovations – all in one transformative experience.",
       imageUrl: "https://images.pexels.com/photos/3608032/pexels-photo-3608032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
+    {
+      city: "Sydney",
+      slug: "sydney",
+      eventName: "Sydney",
+      website: "https://www.caw.sydney",
+      startDate: "2025-03-10",
+      endDate: "2025-03-16",
+      months: ["March"],
+      organizers: ["The Climate Action Foundation"],
+      description: "Climate Action Week Sydney is a series of community-led events across Sydney from all aspects of the climate action ecosystem.",
+      imageUrl: "https://cdn.prod.website-files.com/65d3e1f296874464db5245cc/67b7f4f75b377dd7fc1d7219_Climate-Action-Week-Sydney---Banner.jpg"
+    }   
   ];
   
