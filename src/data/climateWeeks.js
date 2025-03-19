@@ -139,7 +139,7 @@ export const climateWeeks = [
       organizers: ["Colorado Clean Tech"],
       description: "Join a dynamic gathering of cleantech innovators, policy makers, corporate leaders, and investors driving actionable change. Colorado Climate Week stands out as the must-attend event of the year by offering unparalleled opportunities to influence Colorado’s sustainability initiatives and set a regional example for others to follow. Discover cutting-edge solutions, forge strategic partnerships, and shape the next wave of green innovations – all in one transformative experience.",
       imageUrl: "https://images.pexels.com/photos/3608032/pexels-photo-3608032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    }
+    },
     {
       city: "Sydney",
       slug: "sydney",
