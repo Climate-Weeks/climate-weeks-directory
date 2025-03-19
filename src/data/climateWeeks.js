@@ -151,6 +151,18 @@ export const climateWeeks = [
       organizers: ["The Climate Action Foundation"],
       description: "Climate Action Week Sydney is a series of community-led events across Sydney from all aspects of the climate action ecosystem.",
       imageUrl: "https://cdn.prod.website-files.com/65d3e1f296874464db5245cc/67b7f4f75b377dd7fc1d7219_Climate-Action-Week-Sydney---Banner.jpg"
-    }   
+    },
+    {
+      city: "Austin",
+      slug: "austin",
+      eventName: "Austin Climate Week",
+      website: "https://www.atxclimateweek.org/",
+      startDate: "2025-04-26",
+      endDate: "2025-05-04",
+      months: ["April", "May"],
+      organizers: ["Joon Community"],
+      description: "Austin, Texas, is cranking up the heat (in a good way) with its first-ever Climate Week! This isn’t just another conference—it’s a citywide celebration of sustainability, innovation, and action. Picture rooftop parties, hands-on workshops, inspiring talks from eco-warriors, and maybe even susty bus tour.",
+      imageUrl: "https://images.pexels.com/photos/273204/pexels-photo-273204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    }
   ];
   
