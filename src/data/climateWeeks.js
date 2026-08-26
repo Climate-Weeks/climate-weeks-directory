@@ -367,6 +367,18 @@ export const climateWeeks = [
       organizers: ["David Suzuki Foundation", "Future Earth", "Concordia Volt-Age"],
       description: "Semaine Climat Montréal is a citywide festival in Tiohtià:ke/Montréal that brings together individuals, communities, businesses, institutions, and governments to turn climate discussion into action, building a multilingual, multidisciplinary movement through bold programming.",
       imageUrl: "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg"
+    },
+    {
+      city: "Brussels",
+      slug: "brussels",
+      eventName: "Brussels Climate Week",
+      website: "https://brusselsclimateweek.com/",
+      startDate: "2026-10-12",
+      endDate: "2026-10-16",
+      months: ["October"],
+      organizers: ["City of Brussels", "Motis"],
+      description: "Brussels Climate Week brings together European institutions, policymakers, industry leaders, innovators, cities, and communities for five days focused on climate resilience, technological innovation, and industrial transformation. Hosted at Tour & Taxis, the program combines conferences, exhibitions, and partner events designed to turn climate ambition into practical action.",
+      imageUrl: "https://images.pexels.com/photos/8253126/pexels-photo-8253126.jpeg"
     }
   ];
   
